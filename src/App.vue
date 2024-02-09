@@ -26,6 +26,7 @@ export default{
    <label for="movie"> inserisci il titolo di un film:</label>
    <input type="text" id="movie" v-model="movie">
    <p v-if="show">il film inserito: {{ movie }}</p>
+   <p v-show="show">il film inserito: {{ movie }}</p>
   </div>
   
 </template>
