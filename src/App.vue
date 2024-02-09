@@ -6,6 +6,7 @@ export default{
       message:"sarah",
       background:'pink',
       movie:"",
+      show: true,
     }
   },
   methods:{
@@ -22,9 +23,9 @@ export default{
   <button @click='greetings'> cliccami per una sorpresa </button>
 
   <div>
-<label for="movie"> inserisci il titolo di un film:</label>
-  <input type="text" id="movie" v-model="movie">
-  <p>il film inserito: {{ movie }}</p>
+   <label for="movie"> inserisci il titolo di un film:</label>
+   <input type="text" id="movie" v-model="movie">
+   <p v-if="show">il film inserito: {{ movie }}</p>
   </div>
   
 </template>
