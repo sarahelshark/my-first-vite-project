@@ -21,7 +21,11 @@ export default{
           id: 3,
           name: "isabella",
         }
-      ]
+      ],
+      slider:{
+        name: 'Mandalorian',
+        images:[]
+      }
      }
   },
   methods:{
@@ -64,7 +68,13 @@ export default{
   </div>
 
   <ul>
-    <li v-for="n in 10"> {{ n }}</li>
+    <li v-for="n in 10"> {{ n }}</li> <!--v-for con range-->
+  </ul>
+
+  <ul>
+    <li v-for="(value, key) in slider">  <!--v-for in oggetto, chiave-valore-->
+      {{ key }}: {{ value }}
+    </li>
   </ul>
   
 </template>
