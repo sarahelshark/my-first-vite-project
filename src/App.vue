@@ -62,6 +62,10 @@ export default{
     </li>
    </ul>
   </div>
+
+  <ul>
+    <li v-for="n in 10"> {{ n }}</li>
+  </ul>
   
 </template>
  
