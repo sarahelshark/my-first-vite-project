@@ -12,6 +12,7 @@ export default{
   methods:{
     greetings(){
       console.log( " ciao" , this.message );
+      document.getElementById('emptyEl').innerHTML += `ciao ${this.message}`
     }
 
 }
@@ -27,6 +28,7 @@ export default{
    <input type="text" id="movie" v-model="movie">
    <p v-if="show">il film inserito: {{ movie }}</p>
    <p v-show="show">il film inserito: {{ movie }}</p>
+   <p id="emptyEl"></p>
   </div>
   
 </template>
