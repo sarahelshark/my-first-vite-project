@@ -7,12 +7,13 @@ export default{
       background:'pink',
       movie:"",
       show: true,
+      films:['Matrix','Avatar','Drive'],
     }
   },
   methods:{
     greetings(){
       console.log( " ciao" , this.message );
-      document.getElementById('emptyEl').innerHTML += `ciao ${this.message}`
+     document.getElementById('emptyEl').innerHTML += `ciao ${this.message}`
     }
 
 }
@@ -29,6 +30,12 @@ export default{
    <p v-if="show">il film inserito: {{ movie }}</p>
    <p v-show="show">il film inserito: {{ movie }}</p>
    <p id="emptyEl"></p>
+
+   <ul>
+    <li v-for="film in films">
+       {{ film }}
+    </li>
+   </ul>
   </div>
   
 </template>
