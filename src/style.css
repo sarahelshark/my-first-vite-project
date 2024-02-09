@@ -12,7 +12,9 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
+*{
+  list-style: none;
+}
 .pink{
  background-color: #eb5ed3;
  color: white;
